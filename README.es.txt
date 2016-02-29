@@ -1,7 +1,5 @@
-# kit
-Kit de desarrollo para la compilación de paquetes y la creación de paquetes uget utilizados por UTUTO XS.
-
-##Uso del KIT de desarrollo de UTUTO XS
+Uso del KIT de desarrollo de UTUTO XS
+=====================================
 
 * Editar el archivo "compile.list/compile.list.pkg".
 * Poner en éste el/los paquete/s que se van a compilar en la misma linea y dejando un espacio entre los nombres.
@@ -17,4 +15,4 @@ Kit de desarrollo para la compilación de paquetes y la creación de paquetes ug
 * Para crear un backup de lo compilado y poner el KIT en el modo inicial ejecute "05-fin-kit-proceso.sh".
 
 
-**UTUTO XS Devel Team**
+UTUTO XS Devel Team
