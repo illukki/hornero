@@ -1,42 +1,42 @@
 #!/bin/bash
 #########################################
 # List creation of packages to compile	#
-# Author:	Daniel Olivera				#
-#										#
-# Modified: Diego Calbo					#
-# Date:		01/28/2015					#
-#										#
-# Devel Team - UTUTO Project			#
+# Author:	Daniel Olivera		#
+#					#
+# Modified: Diego Calbo			#
+# Date:		01/28/2015		#
+#					#
+# Devel Team - UTUTO Project		#
 #########################################
 
 #################################
 # Verification of last version	#
 #################################
 
-if [ "$1" = "" ]
-then
-	VERSION1=`cat kit.lastversion`
-	wget packages.ututo.org/utiles/kit/kit.lastversion
-	VERSION2=`cat kit.lastversion.1`
-	rm -rf kit.lastversion.1
-	if [ "$VERSION1" != "$VERSION2" ]
-	then
-		clear
-		echo "----------------------------------------------------"
-		echo "Kit for UTUTO XS need upgrade $VERSION1 != $VERSION2"
-		echo " "
-		echo "Please download new version from:"
-		echo "http://packages.ututo.org/utiles/kit/"
-		echo " "
-		echo "Exiting!!"
-		exit
-	else
-		#clear
-		echo "----------------------------------------------------"
-		echo "UTUTO XS Kit version OK!"
-		sleep 2
-	fi
-fi
+##if [ "$1" = "" ]
+##then
+##	VERSION1=`cat kit.lastversion`
+##	wget packages.ututo.org/utiles/kit/kit.lastversion
+##	VERSION2=`cat kit.lastversion.1`
+##	rm -rf kit.lastversion.1
+##	if [ "$VERSION1" != "$VERSION2" ]
+##	then
+##		clear
+##		echo "----------------------------------------------------"
+##		echo "Kit for UTUTO XS need upgrade $VERSION1 != $VERSION2"
+##		echo " "
+##		echo "Please download new version from:"
+####		echo "http://packages.ututo.org/utiles/kit/"
+##		echo " "
+##		echo "Exiting!!"
+##		exit
+##	else
+##		#clear
+##		echo "----------------------------------------------------"
+##		echo "UTUTO XS Kit version OK!"
+##		sleep 2
+##	fi
+##fi
 
 #################################
 # Update the database packages	#
